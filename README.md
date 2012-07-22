@@ -7,5 +7,5 @@ The goals of ChimeIn are to provide both multiple-choice and full-text response 
 
 A production instance is visible at [https://chimein.cla.umn.edu/](https://chimein.cla.umn.edu/).  We're working to develop a complete open source release, and would be interested in working with interested parties.
 
-ChimeIn is licensed under the Apache license.
+The ChimeIn code is licensed under the Apache license.  
 
