@@ -1,0 +1,730 @@
+
+
+/*CAMPUS LINKS*/
+#campus_links {font-size: 90%; line-height: 22px; color: #7a0019; text-align: right; border-bottom: 1px solid #5b0013; text-decoration: none; padding-top: 4px; -webkit-text-size-adjust: none;}
+div.campus_links {background-color: #fff; width: 960px;}
+.campus_links {float: right;}
+#campus_links a {text-decoration:none; border-bottom:1px solid #c2a9ae;}
+#campus_links a:hover {color:#444; border-bottom:1px solid #444;}
+#campus_links ul {margin: 0; font-family:Arial, Helvetica, sans-serif; font-size:86%;}
+#campus_links ul li {display: inline; padding-right: 10px;}
+.campus {color: #000;}
+.jump {margin: 0; float: left; display: none;}
+
+/*TEMPLATE HEADER*/
+#header {height: 63px; background: #7a0019 url("https://assets.cla.umn.edu/common/images/bg_header.gif") top left repeat-x; border-bottom: 1px solid #48000f; width: 560px; clear:both;}
+* html #header {overflow: hidden;}
+html {background: #a5c6a5;}
+#container{padding:15px;}
+
+/*SEARCH AREA IN TEMPLATE HEADER*/
+#search_area  {
+background:url("https://assets.cla.umn.edu/common/images/bg_header.gif") repeat-x scroll left top #7A0019;
+border-bottom:1px solid #48000F;
+display:block;
+float:right;
+height:63px;
+margin-top:-64px;
+width:400px;
+}
+div#search_nav {margin: 4px -2px 2px 237px;}
+div#search_nav a {display: block; float: left; height: 0; padding-top: 25px; overflow: hidden; margin: 0 6px 0 0; text-decoration: none;}
+div#search_nav a#btn_myu {width: 73px; background: transparent url("https://assets.cla.umn.edu/common/images/btn_myu.gif") top left no-repeat;}
+div#search_nav a#btn_onestop {width: 73px; background: transparent url("https://assets.cla.umn.edu/common/images/btn_onestop.gif") top left no-repeat;}
+
+/*SITE SEARCH FORM*/
+/*KNOWN ISSUES: The search button does not align with the search field properly in Firefox 2 on Windows and Opera 9 on Mac. The text in the search field does not disappear when you click into the field in Safari.*/
+/* WARNING: Getting the alignment for all parts of the search field to work on all browsers is very tricky. Be very careful if you decide to alter this CSS*/
+#gsearch {width: 269px; height: 22px; background: transparent url("https://assets.cla.umn.edu/common/images/search_field.gif") top left no-repeat; margin: 0; float: left;}
+#gsearch input#search_field {width:196px; background: none; border: none; margin: 4px 58px 0 15px; font-size: .85em; color: #666; padding: 0;}
+#gsearch label {height: 22px; line-height: 22px; color: #7a0019; font-size:0.7em;}
+.search {float: right; padding: 3px 0px 0px 100px; display: inline;}
+.search_btn {float: right; margin: -18px 0 0 0;}
+/*Fix for Safari 3 browsers to counteract the fix below*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.search_btn {float: right; margin: -22px 0 0 0;}
+}
+
+/*Fix for Firefox 2 browsers to align search button with search field*/
+.search_btn, x:-moz-any-link {float: right; margin: -16px 0 0 0;}
+.search_btn, x:-moz-any-link, x:default {float: right; margin: -22px 0 0 0;}
+
+/* For the print style sheet */
+.leftprint, .rightprint {display: none;}
+
+/* UNIT FOOTER */
+#unit_footer {background-color:#FFFFFF;
+	border-bottom:3px solid #E4E4E4;
+	border-top:3px solid #E4E4E4;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:90%;
+	height:29px;
+	line-height:20px;
+	padding:2px 0 0;
+	width:960px;
+}
+#unit_footer a.clalogo {display: block; float: left; margin: 5px 0 0 10px;}
+ul.unit_footer_links {float:right;
+		font-size:93%;
+		padding:4px 7px 0;
+		margin:0;
+		font-size:86%;}
+		
+		ul.unit_footer_links li {display: inline; padding: 3px;}
+		ul.unit_footer_links li a {color: #7a0019; text-decoration: none; border-bottom: 1px solid #c2a9ae;}
+		ul.unit_footer_links li a:hover {color: #444; border-bottom: 1px solid #444;}
+		.acronym_border {border-bottom-style: none;}
+
+/* FOOTER */
+#footer_inner {
+background:none repeat scroll 0 0 #FFFFFF;
+float:left;
+font-size:90%;
+height:57px;
+list-style:none outside none;
+padding:5px 0 2px;
+width:560px;
+}
+	.copyright {float:left;
+font-family:Arial,Helvetica,sans-serif;
+list-style:none outside none;
+margin:0;
+padding:0 0 0 10px;
+font-size:89%;}
+	#footer_right { font-family:Arial, Helvetica, sans-serif; font-size:84%; padding: 0 0 21px 0; float: right; width: 400px; text-align: right; background: #fff; -webkit-text-size-adjust: none;}
+	ul.footer_links {float: right; padding: 5px 10px 0 0; margin: 0;}
+	ul.footer_links li {display: inline; padding-left: 10px;}
+	ul.footer_links li a {color: #7a0019; text-decoration: none; border-bottom: 1px solid #c2a9ae;}
+	ul.footer_links li a:hover {color: #444; border-bottom: 1px solid #444;}
+
+	.container_12 {height: 100%; clear: both; margin-left: auto; margin-right: auto; float: left; width: 100%;}
+	.container_12 .grid_12 {width: 960px;}
+
+/* CENTER CONTAINER -- Centers the page in the browser */
+#templatecontainer {margin-left: auto; margin-right: auto; width: 960px;}
+
+/* FONTS */
+@font-face {
+	font-family: Titillium;
+	font-weight: 200;
+	src: url('../fonts/TitilliumText22L002.otf');
+}
+@font-face {
+	font-family: Titillium;
+	font-weight: bold;
+	src: url('../fonts/TitilliumText22L005.otf');
+}
+@font-face {
+	font-family: Titillium;
+	src: url('../fonts/TitilliumText22L004.otf');
+}
+
+/* HEADINGS */
+
+#banner {
+	position: relative;
+	clear: both;
+	height: 90px;
+}
+#chimeInLogo {
+	left: 0;
+	position: absolute;
+}
+
+#rightFloatbox {
+	position: absolute;
+	right: 0;
+}
+
+#breadcrumb {
+	position: absolute;
+	right: 0;
+	padding: 5px 20px 0 0;
+	
+}
+
+#helpDiv {
+	position: absolute;
+	height: 100px;
+	right: 0;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+
+#helpLink {
+	text-decoration: none;
+	font-size: 150%;
+	color: #F5A340;
+}
+
+#helpLink:hover {
+	text-decoration: underline;
+}
+
+
+
+#userInfo {
+	top:48px;
+	position: absolute;
+	right: 0;
+	text-align:right;
+	padding-right: 20px;
+}
+
+
+#personName {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#cellPhone {
+	margin-top: 0px;
+	
+}
+
+
+
+body {color: #000; font-family: Titillium, sans-serif; line-height: 1.4; position: relative;}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {  color:#004C48; }
+span.headingwhite {padding: 20px; background: #fff; color:#F5A340;}
+span.headingwhite a {
+	color:#F5A340;
+}
+h1{
+	background:url("../img/headingbg.jpg") repeat-x scroll 0 0 transparent;
+color:#004C48;
+font-family:Titillium,sans-serif;
+font-size:180%;
+margin:15px -15px;
+text-align:center;
+width:960px;
+}
+
+h2{ background:url("../img/headingbg.jpg") repeat-x scroll 0 0 transparent;
+color:#004C48;
+font-family:Titillium,sans-serif;
+font-size:160%;
+margin:15px -15px;
+text-align:center;
+width:960px;
+}
+h3#download {
+	margin-top:18px;
+	float:right;
+	font-size:95%;
+	font-family: Titillium, sans-serif; color:#004C48;
+}
+
+h3#manageCourse {
+	margin-top:18px;
+	float:right;
+	font-size:95%;
+	font-family: Titillium, sans-serif; color:#004C48;
+}
+
+h3.legendHeader {
+	float:left;
+	margin-left:20px;
+	margin-top:16px;
+}
+#container input {
+-moz-border-radius:6px;
+-webkit-border-radius:6px; 
+background:#FCEDD7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FCD9AC));
+	background: -moz-linear-gradient(top,  #FFF,  #FCD9AC);
+border:1px solid #8BB794;
+color:#004C48;
+font-family:Titillium,sans-serif;
+margin: 2px 0px 2px 10px;
+padding: 2px 7px;
+height: 20px;
+}
+#container input[disabled] {
+-moz-border-radius:6px;
+-webkit-border-radius:6px; 
+background:#FCEDD7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FCD9AC));
+	background: -moz-linear-gradient(top,  #FFF,  #FCD9AC);
+border:1px solid #8BB794;
+color:#004C48;
+font-family:Titillium,sans-serif;
+margin: 2px 0px 2px 10px;
+padding: 2px 7px;
+height: 20px;
+opacity:.5;
+}
+
+#container input:hover[disabled] {
+-moz-border-radius:6px;
+-webkit-border-radius:6px; 
+background:#FCEDD7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FCD9AC));
+	background: -moz-linear-gradient(top,  #FFF,  #FCD9AC);
+border:1px solid #8BB794;
+color:#004C48;
+font-family:Titillium,sans-serif;
+margin: 2px 0px 2px 10px;
+padding: 2px 7px;
+height: 20px;
+opacity:.5;
+}
+
+
+#container input:hover {
+-moz-border-radius:6px;
+-webkit-border-radius:6px; 
+background:#FCEDD7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FCD9AC), to(#FFF));
+	background: -moz-linear-gradient(top,  #FCD9AC,  #FFF);
+border:1px solid #8BB794;
+color:#004C48;
+font-family:Titillium,sans-serif;
+margin: 2px 0px 2px 10px;
+padding: 2px 7px;
+height: 20px;
+}
+
+
+#container input[type=text], #container input:hover[type=text]  { 
+    background:#fff;
+}
+
+
+span.responseTime {color:#B56F47;}
+
+span.responsePerson {color:#B56F47;}
+li.result_node {margin-top: 15px;
+list-style:none;}
+ul#FR_all_results_list{
+padding: 0 15px;}
+
+
+
+/* WORD CLOUD */
+.wordCloud {
+	-webkit-transition:font-size 0.4s linear;
+	cursor: pointer;
+	padding-left:1px;
+	padding-right:1px;
+
+}
+#CIword_cloud{
+	width: 600px; 
+	min-height: 200px;
+	-webkit-transition:height 0.4s linear;
+	-moz-transition:height 0.4s linear;
+	border-style: solid;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 13px;
+	padding: 10px 5px 5px 10px;
+
+}
+.CIgroup_entry{
+
+	border: 1px solid ;
+	white-space: nowrap;
+}
+
+.CIgroup_hover {
+	background: #e2dead;
+}
+
+.highlighted {
+	background: #FCE893;
+}
+.highlightWordInCloud {
+
+	background: #FCE893;
+}
+
+.highlightFirstOrderWordInCloud {
+
+	background: #fff4b6;
+}
+.highlightSecondOrderWordInCloud {
+
+	background: #fffce2;
+}
+
+
+#clear_word_cloud{
+	cursor: pointer;
+	margin-left: auto;
+	margin-right:auto;
+	width: 100px;
+
+}
+
+#word_cloud_header {
+	position: relative;
+	
+}
+
+#downloadFree {
+	width: 300px;
+	text-align: right;
+	font-size:95%;
+	font-family: Titillium, sans-serif; color:#004C48;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	margin-top: 0px;
+}
+
+#exclusion_list {
+	text-align:center;
+	margin-top:5px;
+	display:none;
+
+}
+
+.exclude_hover {
+	
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.exclude_hover a {
+	text-decoration:none;
+}
+
+.exclude_hover a span {
+	display:none;
+
+}
+
+.exclude_hover a:hover span {
+	display:inline;
+
+}
+
+
+/* END WORD CLOUD */
+
+#FR_all_results{
+
+	width: 800px; 
+	height: 300px; 
+	overflow:auto; 
+	-webkit-transition:height 0.4s linear;
+	-moz-transition:height 0.4s linear;
+background-color:#E7F3E6;
+border-style:none;
+-moz-border-radius:15px;
+	-webkit-border-radius:15px; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 13px;
+	padding: 5px 5px 5px 10px;
+
+}
+
+#toggleListHeightLink {
+	text-decoration:none;
+	float:right;
+}
+
+
+#toggleListHeightLink:hover {
+	text-decoration:underline;
+}
+
+/* AUTO COMPLETER */   
+div.auto_complete {
+	width: 350px;
+	background: #fff;
+}
+div.auto_complete ul {
+	border:1px solid #888;
+	margin:0;
+	padding:0;
+	width:100%;
+	list-style-type:none;
+}
+div.auto_complete ul li {
+	margin:0;
+	padding:3px;
+	background-color: #a0fe9b;
+}
+div.auto_complete ul li.selected { 
+	background-color: #ffb; 
+}
+div.auto_complete ul strong.highlight { 
+	color: #800; 
+	margin:0;
+	padding:0;
+}
+/* END AUTOCOMPLETER */
+
+
+/* COURSE PAGE */
+
+
+a img {border:none;}
+fieldset {
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+	border: 1px solid #E7F3E6;
+	background-color: #E7F3E6;
+	margin: 20px 50px;
+	clear: both;
+}
+
+.resultQuestionText {
+	margin: 20px 50px;
+	clear: both;
+}
+
+table{
+	border:none;
+	width: 100%;
+}
+tbody { border:none; border-collapse:separate;}
+
+td{	
+	border:none;
+	padding: 10px;
+}
+td.tableTime {
+	width: 77px;
+}
+td.tableStudent {
+	color: #B56F47;
+	width: 120px;
+}
+td:first-child{
+	font-weight:bold;
+}
+th{
+	border: none;
+	font-weight:bold;
+	padding:10px;
+	text-align:left;
+	font-size:110%;
+}
+
+.question_stub {
+	background-color: #f7fef4;
+	margin: 10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	padding:  5px;
+
+}
+
+body#cla_iit_ChimeIn {
+	background-color: #a5c5a4;
+}
+div#globallinks{
+	display:inline;
+	float:right;
+}
+div#templatecontainer {
+	background-color: #fff;
+	font-size: 14px;
+	font-family: Titillium, sans-serif; 
+	color:#004C48;
+}
+
+.question_bullet{
+	position:relative;
+	margin: 10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	border: 1px solid #8BB794;
+	padding: 5px;
+	background-color: #fff;
+}
+
+.question_text{
+	width: 440px;
+	display: block;
+}
+
+.question_options{
+	float: right;
+}
+
+.instant_bullet{
+	margin: 10px;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	border: 1px solid #8BB794;
+	padding: 5px;
+	background-color: #fff;
+
+}
+.buttonContainer {
+	position: absolute;
+	text-align:right;
+	right:5px;
+	top:3px;
+	width:320px;
+}
+
+.result_counter {
+	float:left;
+	min-width:25px;
+	padding-right:2px;
+}
+
+.result_counter p {
+
+	margin:0;
+}
+
+.questiontextCourseEdit {
+	float:left;
+
+}
+
+.questionTextcourEditP {
+	margin:0;
+	margin-left:27px;
+	
+	width:470px;
+}
+
+
+legend  {
+	color:#00605D;
+	font-size:130%;
+	font-weight:bold;
+	margin:-30px 0 20px -30px;
+}
+
+#course_portal{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	background-color: #fdfefc;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 20px;
+}
+
+textarea {
+	width: 100%;
+	height:  90%;
+	resize: none;
+}
+
+.textarea_container{
+	margin-left:  auto;
+	margin-right: auto;
+	width:  90%;
+	height: 100px;
+	padding:  10px;
+}
+
+.new_user_span{
+	margin-left: 50px;
+	padding: 5px;
+}
+
+.course_user_node{
+	margin-left: 50px;
+	padding: 5px;
+	width: 300px;
+}
+
+form {
+	display: inline;
+	color: #F29B53;
+}
+
+.remove_user_button{
+	float: right;
+}
+
+.removeYourself {
+    float:right;
+
+}
+
+#cell_entry{
+	width: 300px;
+}
+
+#cell_confirm{
+	width: 300px;
+}
+
+#cell_update{
+	background-color: #C2D9C2;
+	padding:5px;
+}
+
+#cell_error{
+	background-color: #F9A2A7;
+
+	padding: 5px;
+}
+
+
+
+/* EXPAND STUBS */
+
+.expand_stub{
+}
+
+.expand_stub_title{
+}
+.expand_stub_answer{
+}
+.sms_info{
+	margin-left: 30px;
+	margin-top: -20px;
+	margin-bottom: 15px;
+}
+
+/* END EXPAND STUBS */
+
+.submission_box {
+
+
+	display: inline;
+	height: 1.2em;
+
+	float: left;
+}
+
+.spinner_pad {
+	float: left;
+	display:inline;
+	width: 20px;
+}
+
+.ajax_spinner {
+	display: inline;
+	float: left;
+
+}
+
+.success_box {
+	display: block;
+	float: right;
+}
+
+
+
+.submit {
+
+	float: left;
+}
+
+.anonymous {
+	clear: both;
+}
+#chart_container{
+	height:420px;
+}
