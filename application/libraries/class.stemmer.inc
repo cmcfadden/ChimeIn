@@ -160,7 +160,7 @@ class Stemmer
         $results = array();
 
         if ( !is_array($words) ) {
-            $words = mb_split("[ ,;\n\r\t]+", trim($words));
+            $words = split("[ ,;\n\r\t]+", trim($words));
         }
 
         foreach ( $words as $word ) {
